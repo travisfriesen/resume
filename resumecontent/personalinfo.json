@@ -1,0 +1,29 @@
+{
+  "name": {
+    "type" : "text",
+    "text" : "Travis Friesen"
+  },
+  "phone": {
+    "type": "text",
+    "text": "(123) 456-7890"
+  },
+  "email": {
+    "type": "email",
+    "email": "travis@travisfriesen.ca"
+  },
+  "website": {
+    "type": "link",
+    "text": "travisfriesen.ca",
+    "url": "https://travisfriesen.ca"
+  },
+  "github": {
+    "type": "link",
+    "text": "github.com/travisfriesen",
+    "url": "https://github.com/travisfriesen"
+  },
+  "linkedin": {
+    "type" : "link",
+    "text": "linkedin.com/in/travisfriesen",
+    "url": "https://linkedin.com/in/travisfriesen"
+  }
+}

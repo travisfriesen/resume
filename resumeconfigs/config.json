@@ -1,0 +1,35 @@
+{
+  "personalinfo": {
+    "num_elements" : "5",
+    "contains" : ["name", "phone", "email", "website", "github", "linkedin"]
+  },
+
+  "education": {
+    "title" : "Education",
+    "filepath": "education",
+    "order": "1",
+    "contains": {
+      "umanitoba" : "universityofmanitoba.json",
+      "addschool": "addschool.json"
+    }
+  },
+  "workexperience": {
+    "title": "Work Experience",
+    "filepath": "workexperience",
+    "order": "2",
+    "contains": {
+      "schoolname" : "filelocation",
+      "addschool": "filelocation"
+    }
+  },
+  "projects" : {
+    "title": "Projects",
+    "filepath": "projects",
+    "order": "3",
+    "contains": {
+      "schoolname" : "filelocation",
+      "addschool": "filelocation"
+    }
+  }
+
+}
