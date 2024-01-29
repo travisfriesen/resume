@@ -1,1 +1,4 @@
 /venv/
+.idea/misc.xml
+.idea/resume.iml
+__pycache__/generateComponent.cpython-312.pyc
