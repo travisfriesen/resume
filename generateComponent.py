@@ -1,5 +1,7 @@
 from pdflatex import PDFLaTeX
 
+import jsonExtracter
+
 texdir = 'output/tex/'
 pdfdir = 'output/pdf/'
 
@@ -8,6 +10,14 @@ def generate_sources():
         sources = file.read().rstrip('\n')
 
     return sources
+
+def generate_header(config_filename):
+
+    num_elements = jsonExtracter.getNumElements(config_filename)
+    data1 = "\n\\begin{center}\n\\textbf{\Huge \scshape "
+    #for i in range(num_elements):
+        #print(i)
+    return data1
 
 
 def generateFile():
