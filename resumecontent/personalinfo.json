@@ -9,7 +9,7 @@
   },
   "email": {
     "type": "email",
-    "email": "travis@travisfriesen.ca"
+    "text": "travis@travisfriesen.ca"
   },
   "website": {
     "type": "link",

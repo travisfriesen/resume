@@ -8,13 +8,36 @@ def getNumElements(filename):
         num_elements = e["personalinfo"]["num_elements"]
         return num_elements
 
-def getHeaderElement(object):
-    with open("./resumecontent/personalinfo.json") as json_info:
-        pi = json.load(json_info)
-        pid = json.dumps(pi)
+def getHeaderElement(number):
+    with open("./resumeconfigs/config.json") as json_config:
+        e = json.load(json_config)
+        print(e)
 
-        element = pi[num_elements]
-        print(element)
+        g = json.dumps(e)
+
+        num_elements = e["personalinfo"]["contains"][number]
+        print(num_elements)
+
+        with open("./resumecontent/personalinfo.json") as json_personalinfo:
+            d = json.load(json_personalinfo)
+            print(d)
+
+            y = json.dumps(d)
+
+            result = []
+            type = d[num_elements]["type"]
+            if (type == "text"):
+                result[0] = "text"
+                result[1] = d[num_elements]["text"]
+            elif (type == "email"):
+                result[0] = "email"
+                result[1] = d[num_elements]["text"]
+                result[2] = "mailto:" + d[num_elements]["text"]
+            elif (type == "link"):
+                result[0] = "link"
+                result[1] = d[num_elements]["text"]
+                result[2] = d[num_elements]["url"]
+            return result
 
 
 

@@ -13,6 +13,15 @@ with open("./resumeconfigs/config.json") as json_config:
     num_elements = e["personalinfo"]["contains"][2]
     print(num_elements)
 
+    with open("./resumecontent/personalinfo.json") as json_personalinfo:
+        d = json.load(json_personalinfo)
+        print(d)
+
+        y = json.dumps(d)
+
+        name_text = d[num_elements]["text"]
+        print(name_text)
+
     with open("./resumecontent/personalinfo.json") as json_confff:
         h = json.load(json_confff)
         print(h)
