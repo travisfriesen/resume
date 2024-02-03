@@ -1,0 +1,10 @@
+{
+  "name" : "Example Job",
+  "duration" : "May 2015 - Present",
+  "libraries" : "Python, Git",
+  "description" : {
+    "point1" : "Example point 1",
+    "point2" : "Example point 2",
+    "point3" : "Example point 3"
+  }
+}

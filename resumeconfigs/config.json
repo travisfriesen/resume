@@ -5,24 +5,26 @@
   },
 
   "education": {
+    "type" :"education",
     "title" : "Education",
     "filepath": "education",
     "order": "1",
     "contains": {
-      "umanitoba" : "universityofmanitoba.json",
-      "addschool": "addschool.json"
+      "umanitoba" : "universityofmanitoba.json"
     }
   },
   "workexperience": {
+    "type" : "job-subheading",
     "title": "Work Experience",
     "filepath": "workexperience",
     "order": "2",
     "contains": {
-      "schoolname" : "filelocation",
-      "addschool": "filelocation"
+      "examplejob" : "examplejob.json",
+      "examplejob": "examplejob.json"
     }
   },
   "projects" : {
+    "type" : "project-subheading",
     "title": "Projects",
     "filepath": "projects",
     "order": "3",
@@ -30,6 +32,11 @@
       "schoolname" : "filelocation",
       "addschool": "filelocation"
     }
+  },
+  "skills" : {
+    "type" : "skills",
+    "title": "Skills",
+    "filepath": "skills",
+    "order": "4"
   }
-
 }

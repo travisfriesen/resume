@@ -1,0 +1,11 @@
+{
+  "name" : "Example Job",
+  "company" : "Example Co",
+  "duration" : "May 2015 - Present",
+  "location" : "Example City",
+  "description" : {
+    "point1" : "Example point 1",
+    "point2" : "Example point 2",
+    "point3" : "Example point 3"
+  }
+}
