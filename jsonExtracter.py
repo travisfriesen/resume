@@ -6,6 +6,8 @@ def getNumElements(filename):
         g = json.dumps(e)
 
         num_elements = e["personalinfo"]["num_elements"]
+
+        num_elements = int(num_elements) + 1
         return num_elements
 
 def getHeaderElement(number):
