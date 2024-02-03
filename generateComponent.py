@@ -15,8 +15,8 @@ def generate_sources():
 
 def generate_header(config_filename):
     data = get_header_data(config_filename)
-    num_elements = jsonExtracter.getNumElements(config_filename)
-    data1 = "\n%----------HEADING----------\n\\begin{center}\n\\textbf{\\Huge \\scshape " + data[1] + "} \\\\ \\vspace{1pt}\n"
+    num_elements = jsonExtracter.get_num_elements(config_filename)
+    data1 = "\n\n\n%----------HEADING----------\n\\begin{center}\n\\textbf{\\Huge \\scshape " + data[1] + "} \\\\ \\vspace{1pt}\n"
     for i in range(int(num_elements) - 1):
         if i != int(num_elements) - 2:
             if data[i*3 + 3] == 'text':
@@ -40,10 +40,10 @@ def combine_header_array(a, b):
 
 
 def get_header_data(config_filename):
-    num_elements = jsonExtracter.getNumElements(config_filename)
+    num_elements = jsonExtracter.get_num_elements(config_filename)
     data = []
     for i in range(int(num_elements)):
-        data = combine_header_array(data, jsonExtracter.getHeaderElement(i))
+        data = combine_header_array(data, jsonExtracter.get_header_element(i))
 
     return data
 
@@ -71,4 +71,4 @@ def append_file(resumetitle, passed_data):
 def make_pdf(resumetitle):
     pdfl = PDFLaTeX.from_texfile(texdir + resumetitle + '.tex')
     pdfl.set_output_directory(pdfdir)
-    pdf, log, completed_process = pdfl.create_pdf(keep_pdf_file=True, keep_log_file=False)
+    pdfl.create_pdf(keep_pdf_file=True, keep_log_file=False)
