@@ -3,12 +3,10 @@
     "num_elements" : "5",
     "contains" : ["name", "phone", "email", "website", "github", "linkedin"]
   },
-
   "education": {
     "type" :"education",
     "title" : "Education",
     "filepath": "education",
-    "order": "1",
     "contains": {
       "umanitoba" : "universityofmanitoba.json"
     }
@@ -17,17 +15,15 @@
     "type" : "job-subheading",
     "title": "Work Experience",
     "filepath": "workexperience",
-    "order": "2",
     "contains": {
       "examplejob" : "examplejob.json",
-      "examplejob": "examplejob.json"
+      "examplejob2": "examplejob.json"
     }
   },
   "projects" : {
     "type" : "project-subheading",
     "title": "Projects",
     "filepath": "projects",
-    "order": "3",
     "contains": {
       "schoolname" : "filelocation",
       "addschool": "filelocation"
@@ -36,7 +32,6 @@
   "skills" : {
     "type" : "skills",
     "title": "Skills",
-    "filepath": "skills",
-    "order": "4"
+    "filepath": "skills"
   }
 }
